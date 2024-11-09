@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Polling System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="poll-container">
+        <h2>Online Polling System</h2>
+        <a href="Create Poll">Create poll</a>
+        <a href="pollList">poll List</a>
+        <h2>Which is your favorite programming language?</h2>
+        <h2>Create New Poll</h2>
+        <h3>Poll Title:</h3>
+        <div id="poll-options" >
+            <button onclick="vote('JavaScript')">JavaScript</button>
+            <button onclick="vote('Python')">Python</button>
+            <button onclick="vote('Java')">Java</button>
+            <button onclick="vote('C++')">C++</button>
+        </div>
+        <div>
+            <h2>Poll List</h2>
+            <a href="Favorite programing language">Favorite programing language</a>
+            <h5>Vote for favorite languages</h5>
+        </div>
+        
+        <h2>Poll Details</h2>
+        <div class="results" id="results">
+            <h3>Results:</h3>
+            <ul id="resultList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
